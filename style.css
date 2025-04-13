@@ -424,12 +424,12 @@ i {
     margin: 10px;
     height: auto;
     width: 100%;
-    
+    object-fit: cover;
 }
 
-.prato-imagem img {
+.prato img {
     width: 100%;
-    height: 20%;
+    height: 100%;
     text-align: center;
     transition: transform .2s;
     object-fit: cover;
@@ -438,6 +438,7 @@ i {
 
 .prato-imagem {
     width: 33%;
+    object-fit: cover;
 }
 
 .prato img:hover {
@@ -995,6 +996,7 @@ i {
 
     .prato-imagem {
         width: 33%;
+        object-fit: cover;
     }
 
     .prato-imagem img{
