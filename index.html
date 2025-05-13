@@ -4,6 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Sabor e Alma - Home</title>
+    <meta name="description"
+        content="Página da Cafeteria Sabor e Alma, com o cardápio completo e link para fazer seu pedido!">
+    <meta name="keywords" content="café, sabor, alma, cafeteria, bolo, pão de queijo, cardápio">
+    <meta name="author" content="Milena Oliveira Santos">
+
+    <meta property="og:title" content="Café Sabor e Alma">
+    <meta property="og:description"
+        content="Desperte seus sentidos, um gole de cada vez. Venha já experimentar o cardápio da nossa cafeteria, que inclui diversidade nos sabores e qualidade nos ingredientes.">
+    <meta property="og:image" content="https://meuhtmldaora.onrender.com/img/thumb.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://cafesaborealma.onrender.com/">
+    <meta property="og:author" content="Milena Oliveira Santos">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -13,15 +27,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-
-    <link rel="stylesheet" href="./style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Café Sabor e Alma</title>
+
+    <link rel="icon" href="img/cafe.png">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <header class="bg-home">
     <nav class="header-content">
-        <div class="header-icons" data-aos="fade-down" style="width: 25%;">
+        <div class="header-icons" data-aos="fade-down">
             <a href="#">
                 <i class="fa-brands fa-instagram fa-2x"></i>
                 </i>
@@ -35,11 +49,12 @@
                 </i>
             </a>
         </div>
-        <div class="logo" data-aos="fade-up" data-aos-delay="300" style="width: 50%;">
+        <div class="logo" data-aos="fade-up" data-aos-delay="300">
             <img src="img/logo.png" alt="logo da loja">
         </div>
-        <div data-aos="fade-down" style="width: 25%; justify-content: end; display: flex;">
-            <a href="#" class="reserve">
+        <div class="pedido-btn" data-aos="fade-down">
+            <a href="https://wa.me//5511000000000?text=Quero%20fazer%20em%20um%20agendamento%20hoje!" target="_blank"
+                class="reserve">
                 Faça seu Pedido
             </a>
         </div>
@@ -47,10 +62,9 @@
     </nav>
 
     <div class="slogan" data-aos="fade-up" data-aos-delay="300">
-        <h1>DESPERTE SEUS SENTIDOS,</h1>
-        <h1>UM GOLE DE CADA VEZ.</h1>
+        <h1>DESPERTE SEUS SENTIDOS, <br> UM GOLE DE CADA VEZ.</h1>
         <p>Horário de funcionamento das 09:00 às 19:00</p>
-        <a style="margin-top: 40px;" href="./cardapio.html" class="cardapio">Acessar Cardápio</a>
+        <a href="./cardapio.html" class="cardapio">Acessar Cardápio</a>
     </div>
 </header>
 
@@ -78,34 +92,31 @@
     <div class="services">
         <div class="services-content">
             <h2>CARDÁPIO</h2>
-            <div style="display: flex; justify-content: center;">
-                <p>Nosso cardápio foi criado para satisfazer todos os paladares, oferecendo uma ampla variedade de cafés
-                    artesanais, desde o clássico espresso até combinações exclusivas. Além dos cafés, oferecemos chás,
-                    sucos frescos e smoothies. Para acompanhar, servimos uma seleção de pães, bolos, tortas e
-                    sanduíches, todos feitos com ingredientes frescos e de alta qualidade. Temos opções para café da
-                    manhã, almoço e lanches da tarde, sempre com a garantia de sabor e frescor. Venha explorar nosso
-                    cardápio e deixe-se encantar pelos sabores do Café Sabor & Alma.</p>
-            </div>
-
+            <p>Nosso cardápio foi criado para satisfazer todos os paladares, oferecendo uma ampla variedade de cafés
+                artesanais, desde o clássico espresso até combinações exclusivas. Além dos cafés, oferecemos chás,
+                sucos frescos e smoothies. Para acompanhar, servimos uma seleção de pães, bolos, tortas e
+                sanduíches, todos feitos com ingredientes frescos e de alta qualidade. Temos opções para café da
+                manhã, almoço e lanches da tarde, sempre com a garantia de sabor e frescor. Venha explorar nosso
+                cardápio e deixe-se encantar pelos sabores do Café Sabor & Alma.</p>
         </div>
         <div class="produtos" data-aos="fade-up">
             <div class="responsivo">
-              <div class="comida">
-                <img src="img/cafeaulait.png" alt="Café au lait">
-                <div class="comida-info">
-                    <strong>Café au lait</strong>
-                    <button>R$ 13,00</button>
+                <div class="comida">
+                    <img src="img/cafeaulait.png" alt="Café au lait">
+                    <div class="comida-info">
+                        <strong>Café au lait</strong>
+                        <button>R$ 13,00</button>
+                    </div>
+                </div>
+                <div class="comida">
+                    <img src="img/bolo.png" alt="Bolo de Chocolate">
+                    <div class="comida-info">
+                        <strong>Bolo de Chocolate</strong>
+                        <button>R$ 15,00</button>
+                    </div>
                 </div>
             </div>
-            <div class="comida">
-                <img src="img/bolo.png" alt="Bolo de Chocolate">
-                <div class="comida-info">
-                    <strong>Bolo de Chocolate</strong>
-                    <button>R$ 15,00</button>
-                </div>
-            </div>  
-            </div>
-            
+
             <div class="comida">
                 <img src="img/queijo.png" alt="Pão de Queijo">
                 <div class="comida-info">
@@ -119,13 +130,11 @@
     <div class="services">
         <div class="services-content">
             <h2>O QUE NOSSOS CLIENTES DIZEM</h2>
-            <div style="display: flex; justify-content: center;">
-                <p>No Café Sabor & Alma, a satisfação dos nossos clientes é a nossa maior recompensa. Confira alguns
-                    depoimentos de quem já experimentou a experiência única e acolhedora do nosso café. Suas palavras
-                    refletem a paixão e dedicação que colocamos em cada detalhe, desde o atendimento até a qualidade dos
-                    nossos produtos. Aqui estão algumas opiniões que destacam o que faz do nosso café um lugar especial.
-                </p>
-            </div>
+            <p>No Café Sabor & Alma, a satisfação dos nossos clientes é a nossa maior recompensa. Confira alguns
+                depoimentos de quem já experimentou a experiência única e acolhedora do nosso café. Suas palavras
+                refletem a paixão e dedicação que colocamos em cada detalhe, desde o atendimento até a qualidade dos
+                nossos produtos. Aqui estão algumas opiniões que destacam o que faz do nosso café um lugar especial.
+            </p>
         </div>
         <div class="feedbacks" data-aos="fade-up">
             <div class="cliente">
@@ -162,30 +171,31 @@
     <div class="services">
         <div class="services-content">
             <h2>VENHA TOMAR UM CAFÉ CONOSCO!</h2>
-            <iframe data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3657.361718572464!2d-46.6377671!3d-23.5554489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a91dcdb5c5%3A0x346ddb9dcc8fbf61!2s89%C2%BAC%20Coffee%20Station!5e0!3m2!1spt-BR!2sbr!4v1740883145750!5m2!1spt-BR!2sbr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe data-aos="fade-up"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3657.361718572464!2d-46.6377671!3d-23.5554489!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a91dcdb5c5%3A0x346ddb9dcc8fbf61!2s89%C2%BAC%20Coffee%20Station!5e0!3m2!1spt-BR!2sbr!4v1740883145750!5m2!1spt-BR!2sbr"
+                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer2" data-aos="fade-up">
-            <div class="footer-icons">
-                <a href="#">
-                    <i class="fa-brands fa-instagram fa-2x"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-facebook fa-2x"></i>
-                    </i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-twitter fa-2x"></i>
-                    </i>
-                </a>
-            </div>
-            <div class="logo-rodape">
-                <img src="img/logo.png" alt="logo kalimba">
-            </div>
-            <p>Copyright© 2025 | Café Sabor e Alma - Todos os direitos reservados.</p>
+    <footer data-aos="fade-up">
+        <div class="footer-icons">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                </i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+                </i>
+            </a>
         </div>
+        <div class="logo-rodape">
+            <img src="img/logo.png" alt="logo kalimba">
+        </div>
+        <p>Copyright© 2025 | Café Sabor e Alma - Todos os direitos reservados.</p>
 
     </footer>
 
@@ -194,7 +204,7 @@
         <img src="img/zap.png" alt="Botão do Whatsapp--">
         <span class="tooltip-text">Faça sua Reserva</span>
     </a>
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

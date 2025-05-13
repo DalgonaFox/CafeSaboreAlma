@@ -6,26 +6,17 @@
     font-family: "Inter";
 }
 
+:root {
+    --fundo: #583115;
+    --item: #9E6200;
+    --texto: #ECDCAB;
+}
+
 .inter-regular {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-.inter-medium {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.font18 {
-    font-size: 18px;
-}
-
-.font44 {
-    font-size: 44px;
 }
 
 /*Header*/
@@ -43,28 +34,29 @@ header {
 
 .bg-home {
     position: relative;
-    background-image: url(img/home.png);
-    background-color: #583115;
+    background-image: url(../img/home.png);
+    background-color: var(--fundo);
     background-size: cover;
     padding: 40px;
 }
 
 i {
-    color: #ECDCAB;
+    color: var(--texto);
 }
 
 .header-icons {
     display: flex;
     gap: 14px;
+    width: 25%;
 }
 
 .header-icons a:hover i {
-    color: #9E6200;
+    color: var(--item);
 }
 
 .reserve {
-    border: 1px solid #ECDCAB;
-    color: #ECDCAB;
+    border: 1px solid var(--texto);
+    color: var(--texto);
     padding: 8px 24px;
     border-radius: 8px;
     background-color: transparent;
@@ -74,8 +66,8 @@ i {
 }
 
 .reserve:hover {
-    border: 1px solid #9E6200;
-    background-color: #9E6200;
+    border: 1px solid var(--item);
+    background-color: var(--item);
 }
 
 .logo {
@@ -84,16 +76,27 @@ i {
     justify-content: center;
     margin-top: 14px;
     align-self: center;
+    width: 50%;
+}
+
+.pedido-btn {
+    width: 25%;
+    justify-content: end;
+    display: flex;
 }
 
 .slogan {
-    color: #ECDCAB;
+    color: var(--texto);
     min-height: 80v;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 14px;
+}
+
+.slogan a {
+    margin-top: 40px;
 }
 
 .slogan h1 {
@@ -113,8 +116,8 @@ i {
 }
 
 .cardapio {
-    border: 1px solid #ECDCAB;
-    color: #ECDCAB;
+    border: 1px solid var(--texto);
+    color: var(--texto);
     text-decoration: none;
     background-color: transparent;
     padding: 14px 28px;
@@ -130,16 +133,16 @@ i {
 }
 
 .cardapio:hover {
-    background-color: #9E6200;
+    background-color: var(--item);
     border: none;
 }
 
 /*Sobre*/
 
 .sobre {
-    background-color: #583115;
+    background-color: var(--fundo);
     overflow: hidden;
-    color: #ECDCAB;
+    color: var(--texto);
     text-shadow: 2px 4px 12px black;
     width: 100%;
 }
@@ -148,12 +151,9 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 14px;
-    padding: 34px 14px 64px 14px;
+    padding: 34px 200px 64px 200px;
     text-shadow: 2px 4px 12px black;
     width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
     gap: 100px;
 }
 
@@ -182,8 +182,8 @@ i {
 /*Titulo e descrição*/
 
 .services {
-    background-color: #ECDCAB;
-    color: #583115;
+    background-color: var(--texto);
+    color: var(--fundo);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +197,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-justify: center;
+    text-align: center;
     width: 100%;
 }
 
@@ -244,12 +244,12 @@ i {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: #ECDCAB;
+    background-color: var(--texto);
     border-radius: 8px;
     box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
     overflow: hidden;
     margin-top: 25px;
-    color: #583115;
+    color: var(--fundo);
     font-weight: bold;
     flex-grow: 1;
 }
@@ -273,12 +273,12 @@ i {
     display: flex;
     justify-content: space-between;
     padding: 14px;
-    background-color: #ECDCAB;
+    background-color: var(--texto);
     z-index: 99;
 }
 
 .comida-info button {
-    color: #ECDCAB;
+    color: var(--texto);
     background-color: #BF932A;
     padding: 4px 8px;
     border-radius: 4px;
@@ -294,7 +294,7 @@ i {
     align-items: center;
     justify-content: center;
     padding: 0 44px 34px 44px;
-    background-color: #ECDCAB;
+    background-color: var(--texto);
     overflow: hidden;
 }
 
@@ -302,7 +302,7 @@ i {
     width: 25%;
     display: flex;
     flex-direction: column;
-    background-color: #ECDCAB;
+    background-color: var(--texto);
     border-radius: 8px;
     box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
     overflow: hidden;
@@ -326,15 +326,15 @@ i {
     display: flex;
     justify-content: center;
     padding: 14px;
-    background-color: #ECDCAB;
+    background-color: var(--texto);
     z-index: 99;
     flex-direction: column;
     text-align: center;
 }
 
 .cliente-info button {
-    color: #ECDCAB;
-    background-color: #9E6200;
+    color: var(--texto);
+    background-color: var(--item);
     padding: 4px 8px;
     border-radius: 4px;
     border: 0;
@@ -343,34 +343,27 @@ i {
 
 /*Rodapé*/
 
-.footer {
-    background-color: #583115;
+footer {
+    background-color: var(--fundo);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 54px 0;
     gap: 24px;
-    color: #ECDCAB;
-}
-
-.footer2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    color: var(--texto);
     text-align: center;
 }
 
 .footer-icons {
     display: flex;
     gap: 8px;
-    color: #ECDCAB;
+    color: var(--texto);
     margin-bottom: 20px;
 }
 
 .footer-icons a:hover i {
-    color: #9E6200;
+    color: var(--item);
 }
 
 /*Whatsapp*/
@@ -400,8 +393,8 @@ i {
     padding: 6px;
     border-radius: 8px;
     text-align: center;
-    background-color: #583115;
-    color: #ECDCAB;
+    background-color: var(--fundo);
+    color: var(--texto);
     opacity: 0;
     transition: opacity 0.4s;
 }
@@ -411,13 +404,13 @@ i {
     opacity: 1;
 }
 
-
 /*Cardápio*/
+
 .prato {
     flex: 1;
     display: flex;
     flex-direction: row;
-    background-color: #ECDCAB;
+    background-color: var(--texto);
     border-radius: 8px;
     box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
     overflow: hidden;
@@ -427,7 +420,7 @@ i {
     object-fit: cover;
 }
 
-.prato img {
+.prato-imagem img {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -453,7 +446,7 @@ i {
     flex-direction: column;
     justify-content: center;
     padding: 14px;
-    background-color: #ECDCAB;
+    background-color: var(--texto);
     z-index: 99;
 }
 
@@ -468,7 +461,7 @@ i {
 }
 
 .prato-info button {
-    color: #ECDCAB;
+    color: var(--texto);
     background-color: #BF932A;
     padding: 4px 8px;
     border-radius: 4px;
@@ -504,9 +497,9 @@ i {
 }
 
 .favoritos {
-    background-color: #583115;
+    background-color: var(--fundo);
     overflow: hidden;
-    color: #ECDCAB;
+    color: var(--texto);
     width: 100%;
     display: flex;
     align-items: center;
@@ -549,140 +542,44 @@ i {
 
 
 @media (max-width: 900px) {
-    header {
-        width: 100%;
-        height: 1100px;
-        
-    }
-    
     .header-content {
-        display: flex;
-        align-items: start;
-        margin-bottom: 60px;
         width: 100%;
     }
-    
-    .bg-home {
-        position: relative;
-        background-image: url(img/home.png);
-        background-color: #583115;
-        background-size: cover;
-        padding: 40px;
-    }
-    
-    i {
-        color: #ECDCAB;
-    }
-    
-    .header-icons {
-        display: flex;
-        gap: 14px;
-    }
-    
-    .header-icons a:hover i {
-        color: #9E6200;
-    }
-    
+
     .reserve {
-        border: 1px solid #ECDCAB;
-        color: #ECDCAB;
-        padding: 8px 24px;
-        border-radius: 8px;
-        background-color: transparent;
-        text-decoration: none;
-        transition: background-color 0.5s;
-        justify-self: end;
         font-size: 15px;
         text-align: center;
     }
-    
-    .reserve:hover {
-        border: 1px solid #9E6200;
-        background-color: #9E6200;
-    }
-    
+
     .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 100px;
-        align-self: center;
     }
 
     .logo img {
         width: 350px;
     }
-    
-    .slogan {
-        color: #ECDCAB;
-        min-height: 80v;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 14px;
-    }
-    
-    .slogan h1 {
-        text-align: center;
-        line-height: 150%;
-        max-width: 940px;
-        font-size: 34px;
-        text-shadow: 2px 4px 12px rgb(32, 32, 32);
-    }
-    
+
     .slogan p {
-        text-align: center;
-        margin: 14px 0;
-        text-shadow: 2px 4px 12px black;
-        font-size: 18px;
         width: 100%;
     }
-    
+
     .cardapio {
-        border: 1px solid #ECDCAB;
-        color: #ECDCAB;
-        text-decoration: none;
-        background-color: transparent;
         padding: 15px;
         font-size: 20px;
-        text-align: center;
-        align-content: center;
-        font-weight: 600;
         margin: 0px;
-        border-radius: 8px;
         width: 40%;
         height: 100%;
-        transition: background-color 0.5s;
     }
-    
-    .cardapio:hover {
-        background-color: #9E6200;
-        border: none;
-    }
-    
+
     /*Sobre*/
-    
-    .sobre {
-        background-color: #583115;
-        color: #ECDCAB;
-        text-shadow: 2px 4px 12px black;
-        width: 100%;
-    }
-    
+
     .sobre-content {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-justify: center;
-        width: 100%;
         padding: 10px;
     }
-    
+
     .sobre-imagem {
-        display: flex;
-        justify-content: center;
         width: 90%;
     }
 
@@ -691,331 +588,110 @@ i {
         justify-content: center;
         width: 99%;
     }
-    
+
     .sobre-description {
         width: 100%;
         text-align: center;
-        padding: 0px;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .sobre-description h2 {
         font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 24px;
     }
-    
+
     .sobre-description p {
-        margin-bottom: 70px;
-        line-height: 150%;
+        margin-bottom: 40px;
         text-align: center;
         width: 95%;
     }
-    
+
     /*Titulo e descrição*/
-    
+
     .services {
-        background-color: #ECDCAB;
-        color: #583115;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         padding: 54px 24px;
     }
-    
-    .services-content {
-        margin-bottom: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-justify: center;
-        width: 100%;
-    }
-    
+
     .services-content h2 {
-        text-transform: uppercase;
-        text-align: center;
         font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 24px;
     }
-    
+
     .services-content p {
-        line-height: 150%;
-        margin-bottom: 14px;
-        text-align: center;
         width: 95%;
-        font-size: 18px;
-        color: #323232;
-        justify-self: center;
     }
-    
+
     /*Cardápio*/
-    
+
     .produtos {
-        display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 16px;
-        align-items: center;
-        justify-content: center;
-        padding: 0 44px 34px 44px;
     }
 
     .responsivo {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
         width: 100%;
-        align-items: center;
-        justify-content: center;
     }
-    
+
     .comida {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        background-color: #ECDCAB;
-        border-radius: 8px;
-        box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
-        overflow: hidden;
-        margin-top: 25px;
-        color: #583115;
-        font-weight: bold;
         width: 50%;
-        flex-grow: 1;
     }
-    
-    .comida img {
-        width: 100%;
-        height: 80%;
-        text-align: center;
-        transition: transform .2s;
-        object-fit: fill;
-    }
-    
-    .comida img:hover {
-        transform: scale(1.2);
-        z-index: 1;
-        transition: transform .2s;
-    }
-    
-    .comida-info {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 14px;
-        background-color: #ECDCAB;
-        z-index: 99;
-    }
-    
-    .comida-info button {
-        color: #ECDCAB;
-        background-color: #BF932A;
-        padding: 4px 8px;
-        border-radius: 4px;
-        border: 0;
-        cursor: default;
-    }
-    
+
     /*Feedback*/
-    
+
     .feedbacks {
-        display: flex;
         flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        justify-content: center;
-        padding: 0 44px 34px 44px;
-        background-color: #ECDCAB;
-        overflow: hidden;
     }
-    
+
     .cliente {
         width: 80%;
-        display: flex;
-        flex-direction: column;
-        background-color: #ECDCAB;
-        border-radius: 8px;
-        box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
-        overflow: hidden;
     }
-    
-    .cliente img {
-        width: 100%;
-        text-align: center;
-        transition: transform .2s;
-    }
-    
-    .cliente img:hover {
-        transform: scale(1.2);
-        z-index: 1;
-        transition: transform .2s;
-    }
-    
-    .cliente-info {
-        width: 100%;
-        line-height: 150%;
-        display: flex;
-        justify-content: center;
-        padding: 14px;
-        background-color: #ECDCAB;
-        z-index: 99;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .cliente-info button {
-        color: #ECDCAB;
-        background-color: #9E6200;
-        padding: 4px 8px;
-        border-radius: 4px;
-        border: 0;
-        cursor: default;
-    }
-    
-    /*Rodapé*/
-    
-    .footer {
-        background-color: #583115;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 54px 0;
-        gap: 24px;
-        color: #ECDCAB;
-    }
-    
-    .footer2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .footer-icons {
-        display: flex;
-        gap: 8px;
-        color: #ECDCAB;
-        margin-bottom: 20px;
-    }
-    
-    .footer-icons a:hover i {
-        color: #9E6200;
-    }
-    
+
     /*Whatsapp*/
-    
-    .btn-whatsapp {
-        position: fixed;
-        bottom: 14px;
-        right: 24px;
-        z-index: 99;
-    }
-    
+
     .btn-whatsapp img {
         max-width: 60px;
-        transition: transform 0.4s;
     }
-    
-    .btn-whatsapp img:hover {
-        transform: scale(1.1);
-    }
-    
+
     .btn-whatsapp .tooltip-text {
-        visibility: hidden;
-        position: absolute;
         width: 100px;
-        top: 8px;
-        left: -144px;
-        padding: 6px;
-        border-radius: 8px;
-        text-align: center;
-        background-color: #583115;
-        color: #ECDCAB;
-        opacity: 0;
-        transition: opacity 0.4s;
         font-size: 15px;
     }
-    
-    .btn-whatsapp:hover .tooltip-text {
-        visibility: visible;
-        opacity: 1;
-    }
 
-    .linha-cards {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    
-    .linha-cards-sobra {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        width: 100%;
-        align-self: center;
-        height: 100%;
-    }
-
-    .cardapio-cards {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 16px;
-        align-items: center;
-        justify-content: center;
-        padding: 0 44px 34px 44px;
-    }
+    /*Cardápio*/
 
     .prato-info p {
         font-size: 14px;
-        text-align: start;
-        width: 100%;
     }
-    
+
     .prato-info h6 {
         font-size: 17px;
     }
-    
-    .logo-rodape {
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+    .cardapio-cards {
+        width: 100%;
+    }
+
+    .linha-cards {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .linha-cards-sobra {
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
     }
 
     .logo-rodape img {
         width: 60%;
     }
-
-    .prato-imagem {
-        width: 33%;
-        object-fit: cover;
-    }
-
-    .prato-imagem img{
-        height: 100%;
-        text-align: center;
-        transition: transform .2s;
-        object-fit: cover;
-        text-align: center;
-    }
 }
 
 @media (max-width: 520px) {
     .responsivo {
-        display: flex;
         flex-direction: column;
-        gap: 16px;
         width: 100%;
-        align-items: center;
-        justify-content: center;
     }
 
     .comida {
@@ -1024,12 +700,19 @@ i {
 
     .cliente {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: #ECDCAB;
-        border-radius: 8px;
-        box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
-        overflow: hidden;
+    }
+
+    .slogan a {
+        width: 60%;
+    }
+
+    .slogan h1 {
+        font-size: 2.5rem;
+    }
+
+    .reserve {
+        font-size: 11px;
+        font-weight: 600;
     }
 
 }
